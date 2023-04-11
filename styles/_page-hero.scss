@@ -1,0 +1,30 @@
+/*Background images*/
+
+.comite-hero{
+    background-image: url(../assets/comite-header.jpg);
+}
+
+.page-hero{
+    width: $full-size;
+    background-size: cover;
+    padding-top: 130px;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__container{
+        max-width: $main-width;
+        width: $full-size;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &-gradient{
+        width: $full-size;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #FFFFFF);
+    }
+}

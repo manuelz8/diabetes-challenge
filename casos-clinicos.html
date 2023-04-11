@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos Clinicos</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body class="body-grey internal">
+    <header class="top-menu">
+        <div class="top-menu__upper">
+            <div class="top-menu__upper-container">
+                <h3>
+                    Portal diabetes profesionales
+                </h3>
+                <ul class="top-menu__upper-menu">
+                    <li><a class="menu-links" href="comite.html">Comité Cientifico</a></li>
+                    <li><a class="menu-links" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-menu__container">
+            <div class="top-menu__container-image">
+                <img src="assets/logo-diabetes.png" alt="Diabetes Logo">
+            </div>
+            <div class="top-menu__container-column">
+                <nav class="top-menu__container-nav">
+                    <ul>
+                        <li><a class="menu-links" href="home-plataforma.html">Inicio</a></li>
+                        <li><a class="menu-links" href="contenido-teorico.html">Contenido teórico</a></li>
+                        <li><a class="menu-links current" href="casos-clinicos.html">Casos clínicos</a></li>
+                        <li><a class="menu-links" href="faqs-internal.html">FAQs</a></li>
+                    </ul>
+                </nav>
+                <div class="top-menu__container-button">
+                    <a href="#" class="user-button">
+                        <span class="material-symbols-outlined person-icon">person</span>
+                        Sergio
+                        <span class="material-symbols-outlined arrow-user toggle-sidebar" target-accordion="#user-dropdown">expand_more</span>
+                    </a>
+                    <ul id="user-dropdown" toggle-accordion="false">
+                        <li><a href="#" class="user-dropdown__item">Item 1</a></li>
+                        <li><a href="#" class="user-dropdown__item">Item 2</a></li>
+                        <li><a href="#" class="user-dropdown__item">Item 3</a></li>
+                        <li><a href="#" class="user-dropdown__item"><span class="material-symbols-outlined">logout</span>Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+                <div class="bayer-logo-container">
+                    <p>Patrocionado por:</p>
+                    <img src="assets/bayer.png" alt="Bayer logo">
+                </div>
+            </div>
+            <span class="material-symbols-outlined top-menu__container-mobile-icon toggle-sidebar" target-accordion="#menu-mobile" >menu</span>
+        </div>
+    </header>
+    <div class="top-menu-mobile" toggle-accordion="false" id="menu-mobile">
+        <nav class="top-menu__container-nav">
+            <ul>
+                <li><a class="menu-links" href="home-plataforma.html">Inicio</a></li>
+                <li><a class="menu-links" href="contenido-teorico.html">Contenido teórico</a></li>
+                <li><a class="menu-links current" href="casos-clinicos.html">Casos clínicos</a></li>
+                <li><a class="menu-links" href="faqs-internal.html">FAQs</a></li>
+                                    <li><a class="menu-links" href="comite.html">Comité Cientifico</a></li>
+                    <li><a class="menu-links" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="top-menu__container-button">
+            <a href="#" class="register-button">
+                Regístrate
+            </a>
+        </div>
+        <div class="bayer-logo-container">
+            <p>Patrocionado por:</p>
+            <img src="assets/bayer.png" alt="Bayer logo">
+        </div>
+    </div>
+
+    <div class="page-title margin-c">
+        <h2 class="subheading center">
+            Portal
+        </h2>
+        <h1 class="section-heading center">
+            Casos clínicos
+        </h1>
+    </div>
+
+    <section class="casos-clinicos">
+        <div class="floating-section margin-c casos-clinicos__container">
+            <p class="subheading-2 center">Mi formacion</p>
+
+            <div class="casos-clinicos__container-contenido">
+                <div class="side-bar">
+                    <p class="small-text">Study</p>
+                        <ul class="contenido-index">
+
+                            <li class="index-item" target-accordion="#sub-menu-1">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 01</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-1" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-2">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 02</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-2" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-3">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 03</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-3" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-3">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 04</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-3" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-4">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 04</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-4" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-5">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 05</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-5" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-6">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 06</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-6" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-7">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 07</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-7" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-8">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 08</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-8" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="index-item" target-accordion="#sub-menu-9">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 09</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-9" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+                            <li class="index-item" target-accordion="#sub-menu-10">
+                                <div class="index-item-topic">
+                                    <a href="#">Subject 10</a><span class="material-symbols-outlined toggle-sidebar">arrow_drop_down</span>
+                                </div>
+                                <ul id="sub-menu-10" class="index-item-subtopic" toggle-accordion="false">
+                                    <li class="subtopic"><a href="#" class="current">Questions & Theory</a></li>
+                                    <li class="subtopic"><a href="#">Silabos</a></li>
+                                    <li class="subtopic"><a href="#">Bibliography</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <a href="#" class="small-text">Final Review Exam Simulation</a>
+                </div>
+
+                <div class="main-content">
+                    <p class="subheading">Subject 01</p>
+                    <h2 class="large-text">Questions & Theory</h2>
+                    <div class="main-content-text-upper">
+                        <a href="#" class="main-button izq"><img src="assets/flecha-izq.png" alt="Flecha izquierda">Anterior</a>
+                        <p>15 of 50</p>
+                        <a href="#" class="main-button der">Siguiente<img src="assets/flecha-der.png" alt="Flecha derecha"></a>
+                    </div>
+
+                    <div class="floating-section main-content-text">
+                        <h2>1. Ante un paciente con cefalea</h2>
+
+                        <ol>
+                            <li class="body-text">
+                                Si está relacionada con un aumento de presión intracraneal, puede aumentar al toser
+                                o inclinarse hacia delante.
+
+                                <div class="answer-buttons"><a class="v-button" href="#">Verdadero</a><a class="f-button" href="#">Falso</a></div>
+                            </li>
+
+                            <li class="body-text">
+                                Si es una cefalea en racimo, puede presentar asociado un sindrome de Horner
+                                Contralateral.
+
+                                <div class="answer-buttons"><a class="v-button" href="#">Verdadero</a><a class="f-button" href="#">Falso</a></div>
+                            </li>
+
+                            <li class="body-text">
+                                Un aura visual clâsica (escotoma centelleante con espectro de fortificación) sin
+                                cefalea consecutiva descarta el diagnóstico de migraña.
+
+                                <div class="answer-buttons"><a class="v-button" href="#">Verdadero</a><a class="f-button" href="#">Falso</a></div>
+                            </li>
+
+                            <li class="body-text">
+                                En la arteritis de Horton, la palpación de la arteria temporal puede ser dolorosa.
+
+                                <div class="answer-buttons"><a class="v-button" href="#">Verdadero</a><a class="f-button" href="#">Falso</a></div>
+                            </li>
+
+                            <li class="body-text">
+                                Si asocia paralisis incompleta del lll par, es imperativo descartar un aneurisma
+                                intracraneal.
+
+                                <div class="answer-buttons"><a class="v-button" href="#">Verdadero</a><a class="f-button" href="#">Falso</a></div>
+                            </li>
+                            
+                        </ol>
+                        <a class="submit-button-body" href="#"><span class="material-symbols-outlined">check</span>Validar Respuestas</a>
+                    </div>
+
+                    <div class="main-content-text-lower">
+                        <a href="#" class="main-button izq"><img src="assets/flecha-izq.png" alt="Flecha izquierda">Anterior</a>
+                        
+                        <a href="#" class="main-button der">Siguiente<img src="assets/flecha-der.png" alt="Flecha derecha"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modulos-faqs">
+        <div class="floating-section margin-c modulos-faqs__container">
+            <p class="subheading-2">faqs</p>
+            <h3 class="large-text">Si tienes cualquier duda visita nuestra página de preguntas y respuestas frecuentes</h3>
+            <a href="#" class="register-button margin-c">Ver FAQs</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-section__container">
+                <div class="footer-info">
+                    <img src="assets/logo-diabetes.png" alt="Diabetes Challenge Logo">
+                    <p>Portal único de referencia en el manejo de la diabetes para profesionales</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a class="menu-links" href="comite-page.html">Comité Cientifico</a></li>
+                        <li><a class="menu-links" href="faqs-page.html">FAQs</a></li>
+                        <li><a class="menu-links" href="login-page.html">Login</a></li>
+                    </ul>
+                    <a href="" class="register-button">
+                        Regístrate
+                    </a>
+                </div>
+                <div class="footer-sponsors">
+                    <div class="footer-sponsors__column-1">
+                        <div class="bayer-logo-container">
+                            <p>Avales:</p>
+                            <img src="assets/bayer.png" alt="Bayer logo">
+                        </div>
+                        <div class="bayer-logo-container">
+                            <p>Patrocionado por:</p>
+                            <img src="assets/bayer.png" alt="Bayer logo">
+                        </div>
+                    </div>
+                    <div class="footer-sponsors__column-2">
+                        <div class="bayer-logo-container">
+                            <p>Desarrollado por:</p>
+                            <img src="assets/bayer.png" alt="Bayer logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section-2">
+            <ul>
+                <li><a class="legal-item" href="#">© 2022 Diabetes Challenge.</a></li>
+                <li><a class="legal-item" href="#">Privacy Policy</a></li>
+                <li><a class="legal-item" href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>   
+</body>
+</html>

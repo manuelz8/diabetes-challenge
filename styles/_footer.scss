@@ -1,0 +1,131 @@
+.footer-section{
+    width: $full-size;
+    background-image: url(../assets/footer-bg.jpg);
+    background-size: cover;
+
+    &__container{
+        max-width: $main-width;
+        width: $full-size;
+        margin: 0 auto;
+        padding: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer-info{
+            width: 50%;
+            img{
+                width: $mainlogow;
+                height: $mainlogoh;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: $black;
+                color: $maincolor;
+                max-width: 250px;
+
+            }
+        }
+
+        .footer-menu{
+            width: 25%;
+            ul{
+                list-style: none;
+                padding-left: 0;
+                margin-top: 0;
+
+                li{
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .footer-sponsors{
+            display: flex;
+            width: 25%;
+            
+            &__column-1{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: 50px;
+            }
+
+            &__column-2{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.footer-section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $maincolor;
+    height: 100px;
+
+    ul{
+        padding: 0;
+        display: flex;
+        list-style: none;
+
+        .legal-item{
+            color: white;
+            font-size: 14px;
+            font-weight: $light;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .footer-section, .footer-section-2{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .footer-section{
+
+        .footer-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 40px 0;
+
+            .register-button{
+                margin-right: 0;
+            }
+        }
+
+        .footer-sponsors{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            &__column-1{
+                margin-right: 0;
+
+                .bayer-logo-container{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+}

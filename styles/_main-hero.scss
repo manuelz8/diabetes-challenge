@@ -1,0 +1,46 @@
+.main-hero{
+    width: $full-size;
+    background-image: url(../assets/main-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+
+    &__container{
+        max-width: $main-width;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 130px 20px 0;
+        height: calc(100vh - 130px);
+        justify-content: center;
+
+        h1{
+            font-size: 50px;
+            font-weight: 900;
+            color: $maincolor;
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 20px;
+
+            span{
+                color: $secondcolor;
+            }
+        }
+
+        .subheading{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-hero__container h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .hero-text{
+        font-size: 22px;
+    }
+}

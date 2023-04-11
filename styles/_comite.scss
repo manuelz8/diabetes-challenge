@@ -1,0 +1,120 @@
+.comite{
+    width: $full-size;
+    padding: 80px 0;
+
+    &-container{
+        max-width: $main-width;
+        width: $full-size;
+        margin: 0 auto;
+
+        .medium-text{
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .main-button{
+            margin: 100px auto 0;
+        }
+    }
+}
+
+/*Seccion imagenes comite cientifico */
+
+.comite-drs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    &__item{
+        width: 30%;
+        max-width: 342px;
+        position: relative;
+        margin: 30px 0 120px;
+
+        &-image{
+            img{
+                width: 100%;
+            }
+        }
+
+        &-text{
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0), #FFFFFF, #FFFFFF, #FFFFFF);
+            width: $full-size;
+            border-left: 4px solid #80AFF1;
+            position: absolute;
+            padding-top: 10px;
+            margin-top: -60px;
+
+            .dr-name{
+                font-size: 18px;
+                font-weight: $bold;
+                color: $secondcolor;
+                margin:0;
+                padding-left: 29px;
+            }
+
+            .dr-description{
+                color: $maincolor;
+                font-size: $fonts;
+                font-weight: $light;
+                padding-left: 29px;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+/* Seccion imagenes comite cientifico (Version Centrada) */
+
+.comite-drs__item-text-2{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), #FFFFFF, #FFFFFF, #FFFFFF);
+    width: $full-size;
+    position: absolute;
+    padding-top: 10px;
+    margin-top: -60px;
+
+    .dr-name{
+        font-size: 18px;
+        font-weight: $bold;
+        color: $secondcolor;
+        margin:0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .dr-description{
+        color: $maincolor;
+        font-size: $fonts;
+        font-weight: $light;
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .comite-drs__item-divider{
+        width: 100px;
+        height: 3px;
+        background-color: $secondcolor;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .comite-container{
+        padding: 0 20px;
+    }
+    
+    .comite-drs{
+        &__item{
+            width: 100%;
+        }
+
+        .main-button{
+            margin-top: 0;
+        }
+    }
+}
