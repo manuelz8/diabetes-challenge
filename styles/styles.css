@@ -93,7 +93,6 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 20px;
@@ -109,7 +108,6 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 20px;
@@ -263,7 +261,7 @@ body {
 .top-menu__upper {
   width: 100%;
   padding: 0 20px;
-  background-image: url(../assets/main-background.jpg);
+  background: linear-gradient(to bottom, #F0AA83, #FFB4EF);
   background-size: cover;
 }
 .top-menu__upper-container {
@@ -462,7 +460,6 @@ body {
 .info-diabetes__container-column-2 img {
   display: flex;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -892,7 +889,6 @@ body {
 }
 .faqs .faqs__container .faq-item {
   padding: 0 55px;
-  min-height: 100px;
   border: 1px solid #979797;
   border-radius: 2px;
   max-width: 900px;
@@ -1117,8 +1113,9 @@ body {
 
 .indice-imagen {
   width: 50%;
-  height: 100%;
-  background-color: rgba(128, 128, 128, 0.486);
+  background-color: rgba(236, 236, 236, 0.49);
+  display: flex;
+  border-radius: 20px;
 }
 
 .indice-2 {
@@ -1183,12 +1180,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/background-home.jpg);
+  background-image: linear-gradient(240deg, #F0AA83, #FFB4EF);
   background-size: cover;
   margin-bottom: 50px;
 }
 .modulos-faqs__container .subheading-2 {
-  color: #E5BEEE;
+  color: #002F60;
 }
 .modulos-faqs__container .large-text {
   color: white;
@@ -1379,7 +1376,6 @@ body {
   height: 50px;
   margin: 30px 0;
   border-radius: 30px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1556,7 +1552,6 @@ body {
 }
 .ranking-list li {
   margin: 5px auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1888,4 +1883,7 @@ body {
   .box-4-2__item {
     max-height: unset;
   }
+}
+.faq-item-answer {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

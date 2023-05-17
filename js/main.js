@@ -2,17 +2,12 @@ const btnToggleSidebar = document.querySelector('.toggle-sidebar')
 const sidebar = document.querySelector('.sidebar')
 const listAccordions = document.querySelectorAll('[target-accordion]')
 
-listAccordions.forEach((accordion) => {
-    accordion.addEventListener('click', () => {
-        const queryTargetAccordion = accordion.getAttribute('target-accordion')
-        const targetAccordion = document.querySelector(queryTargetAccordion)
-        const stateTargetAccordion = targetAccordion.getAttribute('toggle-accordion')
-        const toggleState = !(stateTargetAccordion === 'true')
-        targetAccordion.setAttribute('toggle-accordion', toggleState)
-        const sidebarIsClose = sidebar.classList.contains('sidebar--close')
-        if (sidebarIsClose) sidebar.classList.toggle('sidebar--close')
-    })
-})
+$(document).ready(function() {
+    $('.toggle-sidebar').click(function() {
+      $(this).parent().parent().find('.faq-item-answer').slideToggle();
+    });
+  });
+  
 
 btnToggleSidebar.addEventListener('click', function () {
     let delay = 0

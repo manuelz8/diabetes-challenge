@@ -62,7 +62,7 @@
 .top-menu__upper{
     width: $full-size;
     padding: 0 20px;
-    background-image: url(../assets/main-background.jpg);
+    background: linear-gradient(to bottom, #F0AA83, #FFB4EF);
     background-size: cover;
 
     &-container{

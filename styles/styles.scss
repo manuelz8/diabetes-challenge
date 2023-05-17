@@ -718,8 +718,9 @@ body{
 
 .indice-imagen{
     width: 50%;
-    height: 100%;
-    background-color: rgba(128, 128, 128, 0.486);
+    background-color: rgba(236, 236, 236, 0.49);
+    display: flex;
+    border-radius: 20px;
 }
 
 .indice-2{
@@ -793,12 +794,12 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(../assets/background-home.jpg);
+        background-image: linear-gradient(240deg, #F0AA83, #FFB4EF);
         background-size: cover;
         margin-bottom: 50px;
 
         .subheading-2{
-            color: #E5BEEE;
+            color: #002F60;
         }
 
         .large-text{
@@ -1605,6 +1606,10 @@ body{
             max-height: unset;
         }
     }
+}
+
+.faq-item-answer{
+    display: none;
 }
 
 
